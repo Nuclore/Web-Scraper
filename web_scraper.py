@@ -55,10 +55,10 @@ class WebScraper:
 				# Finds the story link by using the get method with 'href'.
 				story_link = story.get('href')
 
-				result = {} # Creates an empty dictionary to store the results.
-				result['Story Title'] = story_title # Stores the story title in the results.
-				result['Story Description'] = story_desc # Stores the story description in the results.
-				result['Story Link'] = story_link # Stores the story link in the results.
+				result = {} # Creates an empty dictionary to store the result.
+				result['Story Title'] = story_title # Stores the story title in the result dictionary.
+				result['Story Description'] = story_desc # Stores the story description in the result dictionary.
+				result['Story Link'] = story_link # Stores the story link in the result dictionary.
 
 				self.results.append(result) # Appends the result to the results list.
 		except AttributeError:
